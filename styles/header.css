@@ -1,4 +1,4 @@
-.cabecalho__menu-hamburguer{
+.cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
@@ -7,7 +7,7 @@
     background-position: center;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -15,21 +15,47 @@
     position: relative;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
 }
 
-.container__imagem{
+.container__imagem {
     padding: 1em;
 }
 
-.lista-menu{
+.lista-menu {
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
-.container__botao:checked~.lista-menu{ /*vai funcionar quando clicar e aparecerá o menu*/
+.container__botao{
+    display: none;
+}
+
+.container__botao:checked~.lista-menu {
+    /*funciona como condicional, quando for clicado aparecerá o menu*/
     display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade); /*alterei o padrão do figma para a root criada*/
+    -webkit-background-clip: text; /*essas 3 linhas abaixo copiada do figma*/
+    -webkit-text-fill-color: transparent; /* para que funcione em outros navegadores*/
+    background-clip: text; /*prende aquela cor de background só onde tem texto*/
+    text-transform: uppercase;
+    text-decoration: none;
 }
