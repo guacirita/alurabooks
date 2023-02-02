@@ -13,6 +13,7 @@
 .banner__texto{
     font-weight: 500;
     margin: 1em 0;
+    line-height: 24px;
 }
 
 .banner__pesquisa{
