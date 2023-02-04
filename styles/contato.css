@@ -34,12 +34,11 @@
     color: var(--azul);
     background: url("../img/Email.svg") no-repeat;
     background-position: 5px center;
-    padding-left: 2rem;  
+    padding-left: 5rem;  
 }
 
-.contato__email:placeholder-shown {
+.contato__email::placeholder-shown {
     color: var(--azul);
-    padding-left: 2rem;
 }
 
 @media screen and (min-width: 1024px){
@@ -56,13 +55,16 @@
 
     .contato__email{
         width: 25%;
+        text-align: center;
     }
 
     .contato__titulo{
         font-size: 24px;
     }
+}
 
-    .contato__email::placeholder-shown{
-        text-align: center;
+@media screen and (min-width: 1728px){
+    .contato{
+        padding: 3em 20vw;
     }
 }

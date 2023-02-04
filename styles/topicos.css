@@ -40,12 +40,45 @@
         font-size: 24px;
     }
 
-    .topicos__lista{
-        margin: 2em 16em;
+    .topicos{
+        padding: 3em 15vw;
+    }
+    
+    .topicos__item:nth-child(1){
+        order: 1;
     }
 
-    .topicos__item{
-        margin: 1.5em .5em;
-        padding: 1em 0;
+    .topicos__item:nth-child(2){
+        order: 3;
+    }
+
+    .topicos__item:nth-child(3){
+        order: 4;
+    }
+
+    .topicos__item:nth-child(4){
+        order: 5;
+    }
+
+    .topicos__item:nth-child(5){
+        order: 6;
+    }
+
+    .topicos__item:nth-child(6){
+        order: 8;
+    }
+
+    .topicos__item:nth-child(7){
+        order: 2;
+    }
+
+    .topicos__item:nth-child(8){
+        order: 7;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .topicos{
+        padding: 3em 20vw;
     }
 }
